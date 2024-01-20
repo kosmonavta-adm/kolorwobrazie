@@ -1,27 +1,20 @@
-import All from '@/app/_components/_icons/All';
-import Angel from '@/app/_components/_icons/Angel';
+import Other from '@/app/_components/_icons/Other';
 import Cat from '@/app/_components/_icons/Cat';
 import Flowers from '@/app/_components/_icons/Flowers';
-import Landscapes from '@/app/_components/_icons/Landscapes';
+import Star from '@/app/_components/_icons/Star';
 
 export const menuPaths = [
     {
         key: 0,
         href: '/',
         label: 'Wszystko',
-        Icon: All,
+        Icon: Star,
     },
     {
         key: 1,
         href: '/koty',
         label: 'Koty',
         Icon: Cat,
-    },
-    {
-        key: 2,
-        href: '/anioly',
-        label: 'Anioły',
-        Icon: Angel,
     },
     {
         key: 3,
@@ -31,8 +24,24 @@ export const menuPaths = [
     },
     {
         key: 4,
-        href: '/krajobrazy',
-        label: 'Krajobrazy',
-        Icon: Landscapes,
+        href: '/inne',
+        label: 'Inne',
+        Icon: Other,
     },
 ];
+
+export function shuffle(array) {
+    let counter = array.length;
+
+    while (counter > 0) {
+        let index = Math.floor(Math.random() * counter);
+
+        counter--;
+
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}

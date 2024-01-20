@@ -8,7 +8,7 @@ const Nav = () => {
     const pathname = usePathname();
 
     return (
-        <div className="sticky top-8 flex h-[100svh] flex-col">
+        <div className="sticky top-8 flex h-[95svh] flex-col">
             <h1 className="mb-10 bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pt-1 font-logo text-5xl text-transparent">
                 Kolor w obrazie
             </h1>
@@ -32,7 +32,7 @@ const Nav = () => {
                     );
                 })}
             </nav>
-            <p className="mb-16 mt-auto flex text-sm text-neutral-500 2xl:text-base">
+            <p className="mb-0 mt-auto flex text-sm text-neutral-500 2xl:text-base">
                 Wykonanie:{' '}
                 <Link
                     href="https://krzysztofadamczak.pl"

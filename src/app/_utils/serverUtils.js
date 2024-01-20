@@ -45,8 +45,7 @@ export const getImagesFromAllCategories = async () => {
 };
 
 export const CATEGORIES = {
-    ANGELS: 'anioly',
     CATS: 'koty',
-    LANDSCAPES: 'krajobrazy',
     FLOWERS: 'kwiaty',
+    OTHER: 'inne',
 };
