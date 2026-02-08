@@ -2,6 +2,7 @@ import Other from '@/app/_components/_icons/Other';
 import Cat from '@/app/_components/_icons/Cat';
 import Flowers from '@/app/_components/_icons/Flowers';
 import Star from '@/app/_components/_icons/Star';
+import Mailbox from '@/app/_components/_icons/Mailbox';
 
 export const menuPaths = [
     {
@@ -27,6 +28,12 @@ export const menuPaths = [
         href: '/inne',
         label: 'Inne',
         Icon: Other,
+    },
+    {
+        key: 5,
+        href: '/kontakt',
+        label: 'Kontakt',
+        Icon: Mailbox,
     },
 ];
 
