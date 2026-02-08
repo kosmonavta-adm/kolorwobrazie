@@ -23,7 +23,7 @@ const ContactPage = () => {
         const formData = new FormData(form)
 
         const parsedForm = Object.fromEntries(formData)
-        if(parsedForm.body.trim().length <= 50) {
+        if(parsedForm.body.trim().length <= 32) {
             setIsFormDisabled(true);
             return;
         }

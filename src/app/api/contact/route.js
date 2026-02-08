@@ -12,10 +12,10 @@ export async function POST(req) {
     }
 
     const parsedEmail = data.email.trim();
-    const parsedBody = data.email.trim();
+    const parsedBody = data.body.trim();
 
-    if(parsedEmail.length === 0 || parsedBody.length === 0) {
-        return Response.json({ error: 'Invalid email or body'}, { status: 500 });
+    if(parsedEmail.length === 0 || parsedBody.length === 0 || parsedEmail.length < 6 || parsedBody.length <= 32) {
+        return Response.json({ error: ''}, { status: 500 });
     }
 
     try {
